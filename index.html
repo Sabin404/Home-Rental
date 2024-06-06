@@ -1,26 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Rental</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
   <header>
     <nav class="navbar">
       <div class="logo">
-         <a href="#home" class="home"> <img src="logo.png" alt="Logo"></a>
+        <a href="#home" class="home"> <img src="" alt="Logo" class="image"></a>
       </div>
       <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#login" class="login-btn">Login</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#faqs">FAQ</a></li>
+        <li><a href="#login" class="login-btn">Login</a></li>
       </ul>
-  </nav>
+    </nav>
   </header>
+  <!-- Section -->
+  <Section class="section" id="home">
+    <div class="section1">
+      <div class="pictext" style="text-align: center;">
+        <span class="spantext">Now its easy to find your favourite home</span><br><br>
+        <div class="inputitem">
+          <input type="text" placeholder="City" class="input" />
+          <input type="number" placeholder="Min Price" class="input" />
+          <input type="number" placeholder="Max Price" class="input" />
+          <button class="btn">Search</button>
+        </div>
+      </div>
+    </div>
+  </Section>
+
+  <div class="findus">
+    <h2 class="findusnew">Find the new place with SBH</h2>
+    <span class="loremtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ipsum nemo eius adipisci
+      repellendus reprehenderit
+      laboriosam voluptatibus! Deleniti, tenetur totam voluptatibus eaque et deserunt sit voluptatem doloremque
+      explicabo quod eum.</span>
+  </div>
+
+  <!-- Section2 -->
+
+  <section class="section2" id="services">
+    <div class="section2div">
+      <h1 class="heading2" style="font-size: 40px;">Our Services</h1>
+    </div>
+    <div class="serviceitem">
+      <div class="serviceitemcontainer">
+        <div class="location">
+          <i class="fa-solid fa-location-dot"></i><br>
+          <span class="locationtext">Find places anywhere in the city</span><br>
+          <span class="locationlorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+        </div>
+        <!-- 2nd -->
+
+        <div class="agent">
+          <i class="fa-solid fa-house"></i><br>
+          <span class="agenttext">Buy or rent beautiful properties.</span><br>
+          <span class="agentlorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+        </div>
+
+        <!-- 3rd -->
+        <div class="house">
+          <i class="fa-solid fa-users"></i><br>
+          <span class="housetext">We have agents with experience</span><br>
+          <span class="houselorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+        </div>
+        
+        <!-- 4th -->
+        <div class="cloud">
+          <i class="fa-solid fa-cloud"></i><br>
+          <span class="cloudtext">With agents acocunt you can list properties</span><br>
+          <span class="cloudlorem">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- properties -->
+
+  <section class="propertiessection" style="text-align: center;">
+    <h1 style="margin-bottom: 30px;">Featured Properties</h1>
+    <div class="house-section featuredhouse"></div>
+    <h1 style="margin: 30px;">Recently Listed House</h1>
+    <div class="house-section Recenthouse"></div>
+  </section>
+
+
+  <!-- About us -->
+
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <div class="about-content">
+        <div class="company-info">
+            <h3>Our Company</h3>
+            <p>We are dedicated to providing the best home rental services. Our mission is to help you find the perfect home that meets your needs and exceeds your expectations.</p>
+        </div>
+        <div class="team">
+            <h3>Meet Our Team</h3>
+            <div class="team-member">
+                <img src="Images/708eec5e-3a90-4c86-95b9-1a3f5796ccd6.jpg" alt="Team Member 1">
+                <h4>Sabin Paudel</h4>
+                <p>CEO</p>
+            </div>
+            <div class="team-member">
+                <img src="/Images/man-1388844636pPr.jpg" alt="Team Member 2">
+                <h4>Agent Paudel</h4>
+                <p>Head of Sales</p>
+            </div>
+            <div class="team-member">
+                <img src="/Images/R.jpg" alt="Team Member 3">
+                <h4>Samdi Subedi</h4>
+                <p>Lead Agent</p>
+            </div>
+        </div>
+        <div class="achievements">
+            <h3>Our Achievements</h3>
+            <ul>
+                <li>Best Real Estate Agency 2023</li>
+                <li>Over 500 Happy Clients</li>
+                <li>10 Years of Experience</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<!-- FAQ -->
+<section id="faqs" class="faqs-section">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+      <h3>1.What is the process for renting a property?</h3>
+      <p>To rent a property, start by browsing our listings. Once you find a property you're interested in, you can contact us to schedule a viewing. After viewing, you can apply for the rental by filling out an application form.</p>
+  </div>
+  <div class="faq-item">
+      <h3>2.What documents are required for the rental application?</h3>
+      <p>You'll need to provide a government-issued ID, proof of income, and references from previous landlords. Additional documents may be required depending on the property.</p>
+  </div>
+  <div class="faq-item">
+      <h3>3.How do I schedule a maintenance service?</h3>
+      <p>You can schedule a maintenance service through our website. Log in to your account, navigate to the 'Services' section, and fill out the service request form.</p>
+  </div>
+  <div class="faq-item">
+      <h3>4.Are pets allowed in the rental properties?</h3>
+      <p>Pet policies vary by property. Please check the property listing or contact us for more information about specific properties' pet policies.</p>
+  </div>
+</section>
   <script src="script.js"></script>
 </body>
+
 </html>
