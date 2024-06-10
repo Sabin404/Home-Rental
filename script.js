@@ -1,4 +1,4 @@
-const home_images = [
+?const home_images = [
   "https://th.bing.com/th/id/OIP.efnJ95bSkFJqx7LYn9jCWQHaE3?rs=1&pid=ImgDetMain",
   "https://th.bing.com/th/id/OIP._ornIK8XKAE6nVoXpK9TlQHaEY?w=760&h=450&rs=1&pid=ImgDetMain",
   "https://th.bing.com/th/id/OIP._ornIK8XKAE6nVoXpK9TlQHaEY?w=760&h=450&rs=1&pid=ImgDetMain",
@@ -75,6 +75,7 @@ r_houses.forEach((src, index) => {
     rhouse.appendChild(houseItem);
 });
 
+//TOOGLE BUTTON
 
 
 
