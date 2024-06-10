@@ -59,7 +59,54 @@ header {
 
 .home {
   text-decoration: none;
+  font-size: 25px;
+  font-weight: bolder;
+  display: inline-block;
+  color: white; 
+  animation: animateSBH 4s infinite ease-in-out;
 }
+
+@keyframes animateSBH {
+  0% {
+      color: white;
+      transform: scale(1) rotate(0deg);
+      letter-spacing: 0px;
+      opacity: 1;
+  }
+  20% {
+      color: #ff6347; 
+      transform: scale(1.2) rotate(10deg);
+      letter-spacing: 2px;
+      opacity: 0.9;
+  }
+  40% {
+      color: #ffff00;
+      transform: scale(1.4) rotate(0deg);
+      letter-spacing: 4px;
+      opacity: 0.8;
+  }
+  60% {
+      color: #00ff00;
+      transform: scale(1.2) rotate(-10deg);
+      letter-spacing: 2px;
+      opacity: 0.9;
+  }
+  80% {
+      color: #ff69b4; 
+      transform: scale(1.1) rotate(5deg);
+      letter-spacing: 1px;
+      opacity: 1;
+  }
+  100% {
+      color: white;
+      transform: scale(1) rotate(0deg);
+      letter-spacing: 0px;
+      opacity: 1;
+  }
+}
+
+
+
 
 .section1{
   width: 100%;
@@ -81,7 +128,7 @@ header {
   font-weight: bold;
   padding: 10px 20px;
   border-radius: 10px;
-   background-color: rgba(0, 0, 0, 0.2);
+   background-color: rgba(0, 0, 0, 0.4); 
    width: max-content;
 }
 
@@ -285,7 +332,7 @@ transition: .3s;
 .about-section h2 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #2c3e50;
+  color: #090909;
   text-transform: uppercase;
   letter-spacing: 2px;
   position: relative;
@@ -315,7 +362,7 @@ transition: .3s;
 .achievements h3 {
   font-size: 28px;
   margin-bottom: 15px;
-  color: #e74c3c;
+  color: #090909;
   text-transform: uppercase;
   text-align: center;
 }
@@ -526,7 +573,7 @@ button:hover {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 10px;
-  color: #bbb;
+  color: #e3dede;
   font-weight: bold;
 }
 

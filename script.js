@@ -29,7 +29,7 @@ const home_details = [
   { price: "$320,000", text: "Rural Farmhouse" }
 ];
 const image = document.querySelector('.image');
-image.src = home_images[0];
+// image.src = home_images[0];
 
 const fhouse=document.querySelector('.featuredhouse');
 const rhouse=document.querySelector('.Recenthouse');
