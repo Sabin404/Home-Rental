@@ -97,6 +97,24 @@
     <div class="house-section Recenthouse"></div>
   </section>
 
+  <div id="booking-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" style="cursor: pointer;">&times;</span>
+        <h2 style="margin: 0;">Book Now</h2>
+        <p id="selected-house-details"></p> 
+        <form id="booking-form">
+            <input type="hidden" id="house-id"> 
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="number">Phone Number:</label>
+            <input type="number" id="number" name="number" required>
+            
+            <button type="submit">Submit Booking</button>
+        </form>
+    </div>
+  </div>
 
   <!-- About us -->
 
