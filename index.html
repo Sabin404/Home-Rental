@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Rental</title>
   <link rel="stylesheet" href="style.css">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
@@ -21,7 +22,7 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#faqs">FAQ</a></li>
-        <li><a href="#login" class="login-btn">Login</a></li>
+        <li><a href="./login.html" class="login-btn">Login</a></li>
       </ul>
     </nav>
   </header>
@@ -30,12 +31,12 @@
     <div class="section1">
       <div class="pictext" style="text-align: center;">
         <h1 class="spantext">Now its easy to find your favourite home</h1><br><br>
-        <div class="inputitem">
-          <input type="text" placeholder="City" class="input" />
-          <input type="number" placeholder="Min Price" class="input" />
-          <input type="number" placeholder="Max Price" class="input" />
-          <button class="btn">Search</button>
-        </div>
+        <form class="inputitem" action="./externalFiles/search.html"id="searchForm" >
+          <input type="text" placeholder="City" class="input" id="searchCity"  required/>
+          <input type="number" placeholder="Min Price" id="minprice" class="input" min="4000" step="500" value="4000" disabled style="background-color: white; font-size: 15px;"/>
+          <input type="number" placeholder="Max Price" id="maxprice" class="input"  min="4000" step="500" value="4000"/>
+          <input type="submit" class="btn" id="searchbutton"/>
+        </form>
       </div>
     </div>
   </Section>
@@ -172,7 +173,7 @@
           </ul>
       </div>
       <div class="contact-form">
-          <form action="#" method="post">
+          <form action="https://formspree.io/f/mgeggaba" method="post">
               <div class="form-group">
                   <input type="text" name="name" placeholder="Your Name" required>
               </div>
@@ -229,6 +230,6 @@
 </footer>
   
   <script src="script.js"></script>
+  <script type="module" src="./externalFiles/search.js"></script>
 </body>
-
 </html>
