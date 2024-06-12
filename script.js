@@ -1,4 +1,31 @@
 // import './externalFiles/search.js'
+// document.querySelector('.hamburger').addEventListener('click', () => {
+//   document.querySelector('.close-btn').style.display="block";
+//   document.querySelector('.hamburger').style.display="none";
+//   document.querySelector('.nav-links').classList.toggle('nav-active');
+// });
+
+const hamburger = document.querySelector('#hamburger');
+const closebar = document.querySelector('.close-btn');
+const navlinks = document.querySelector('.nav-links');
+let isTrue = false;
+
+hamburger.addEventListener('click', () => {
+  if (!isTrue) {
+    navlinks.classList.add('nav-active');
+    hamburger.style.display = "none";
+    closebar.style.display = "block";
+    isTrue=true;
+  }
+});
+
+closebar.addEventListener('click', () => {
+  navlinks.classList.remove('nav-active');
+  closebar.style.display = "none";
+  hamburger.style.display = "block";
+  isTrue=false;
+})
+
 
 const home_images = [
   "https://th.bing.com/th/id/OIP.efnJ95bSkFJqx7LYn9jCWQHaE3?rs=1&pid=ImgDetMain",
@@ -38,7 +65,7 @@ const rhouse = document.querySelector('.Recenthouse');
 
 const f_houses = home_images.slice(0, 5);
 const r_houses = home_images.slice(5, 10);
-const close=document.querySelector('.close');
+const close = document.querySelector('.close');
 
 function createHouseItem(src, details) {
   const container = document.createElement('div');
@@ -67,10 +94,10 @@ function createHouseItem(src, details) {
 
   document.body.appendChild(a);
 
-  button.addEventListener('click',()=>{
-    document.querySelector('#selected-house-details').innerHTML=`${details.text}=${details.city}(${details.price})`;
-    document.querySelector('#booking-modal').style.display='block';
-    document.querySelector('#booking-modal').style.transition='.3s ease';
+  button.addEventListener('click', () => {
+    document.querySelector('#selected-house-details').innerHTML = `${details.text}=${details.city}(${details.price})`;
+    document.querySelector('#booking-modal').style.display = 'block';
+    document.querySelector('#booking-modal').style.transition = '.3s ease';
   })
 
   container.appendChild(img);
@@ -81,8 +108,8 @@ function createHouseItem(src, details) {
   return container;
 }
 
-close.addEventListener('click',()=>{
-  document.querySelector('#booking-modal').style.display='none';
+close.addEventListener('click', () => {
+  document.querySelector('#booking-modal').style.display = 'none';
 });
 
 f_houses.forEach((src, index) => {

@@ -22,10 +22,13 @@
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#faqs">FAQ</a></li>
-        <li><a href="./login.html" class="login-btn">Login</a></li>
-      </ul>
-    </nav>
+        <li><a href="./externalFiles/login.html" class="login-btn">Login</a></li>
+        </ul>
+      <i class="fa-solid fa-bars hamburger" id="hamburger"></i>
+      <i class="fa-solid fa-xmark close-btn" id="close-btn"></i>
+        </nav>
   </header>
+
   <!-- Section -->
   <Section class="section" id="home">
     <div class="section1">
@@ -34,7 +37,7 @@
         <form class="inputitem" action="./externalFiles/search.html"id="searchForm" >
           <input type="text" placeholder="City" class="input" id="searchCity"  required/>
           <input type="number" placeholder="Min Price" id="minprice" class="input" min="4000" step="500" value="4000" disabled style="background-color: white; font-size: 15px;"/>
-          <input type="number" placeholder="Max Price" id="maxprice" class="input"  min="4000" step="500" value="4000"/>
+          <input type="number" placeholder="Max Price" id="maxprice" class="input"  min="4000" step="500" />
           <input type="submit" class="btn" id="searchbutton"/>
         </form>
       </div>
